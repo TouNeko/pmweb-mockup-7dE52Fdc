@@ -36,61 +36,88 @@
     <div class="container">
       <div class="page-header">
         <div class="page-header-inner">
-          <h2 class="page-title">登入/註冊</h2>
+          <h2 class="page-title">結帳資訊</h2>
         </div>
       </div>
+      <div class="notification"><span class="time-count">購票確認倒數計時：9 分 48 秒</span><span>請於時間內完成訂票流程，逾時座位將自動釋出。</span></div>
       <div class="main-content">
-        <div class="account">
-          <ul class="nav nav-tabs sign-tab">
-            <li class="active"><a href="#signin" data-toggle="tab">登入</a></li>
-            <li><a href="#signup" data-toggle="tab">註冊</a></li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane fade in active" id="signin">
+        <div class="payment">
+          <div class="payment-process is-step1-active">
+            <div class="payment-step step1"><span>購票確認</span></div>
+            <div class="payment-step step2"><span>付款結帳</span></div>
+            <div class="payment-step step3"><span>訂購結果</span></div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">活動資訊</h3>
+            <div class="section-content">
+              <p>音樂劇《寂寞瑪奇朵》熱情續杯<br>新北市藝文中心 演藝廳 2017/11/25(二) 19:00 A區 4張票</p>
+            </div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">購買票券</h3>
+            <div class="section-content">
+              <ul class="payment-item-info">
+                <li class="name">F區 25排3號</li>
+                <li class="quantity">x1</li>
+                <li class="price is-deleted">$800元</li>
+              </ul>
+              <ul class="payment-item-info">
+                <li class="name">F區 25排4號</li>
+                <li class="quantity">x1</li>
+                <li class="price">$800元</li>
+              </ul>
+              <ul class="payment-item-info">
+                <li class="name">F區 25排5號</li>
+                <li class="quantity">x1</li>
+                <li class="price">$800元</li>
+              </ul>
+              <ul class="payment-item-info">
+                <li class="name">F區 25排6號</li>
+                <li class="quantity">x1</li>
+                <li class="price">$800元</li>
+              </ul>
               <form>
-                <div class="input-item">
-                  <label class="width-2">帳號</label>
-                  <div class="input">
-                    <input type="text" placeholder="請輸入手機號碼">
-                  </div>
+                <div class="use-bonus">
+                  <input type="checkbox">使用紅利點數兌換票券
                 </div>
-                <div class="input-item">
-                  <label class="width-2">密碼</label>
-                  <div class="input">
-                    <input type="password" placeholder="請輸入密碼">
-                  </div>
-                </div>
-                <button class="primary">登入</button>
               </form>
-              <div class="sub-content"><a class="link-button" href="../account/forget-pw.html">忘記密碼</a></div>
-              <div class="sns-signin">
-                <button class="signin-facebook">使用 Facebook 登入</button>
-                <button class="signin-line">使用 LINE 登入</button>
+            </div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">取票方式</h3>
+            <div class="section-content">
+              <form>
+                <div class="get-ticket-method">
+                  <input type="radio" name="method" value="e_ticket">
+                  <div class="method">電子票券</div>
+                  <div class="price">$0元</div>
+                </div>
+                <div class="get-ticket-method">
+                  <input type="radio" name="method" value="ibon">
+                  <div class="method">iBon 取票</div>
+                  <div class="price">$30元</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="section">
+            <h3 class="section-title">總計金額</h3>
+            <div class="section-content">
+              <div class="paymant-total-info">
+                <div class="label">紅利點數</div>
+                <div class="price">8000點</div>
+              </div>
+              <div class="paymant-total-info">
+                <div class="label">付款金額</div>
+                <div class="price">$3600元</div>
               </div>
             </div>
-            <div class="tab-pane fade" id="signup">
+          </div>
+          <div class="section">
+            <div class="section-content">
               <form>
-                <div class="input-item">
-                  <label class="width-6">帳號(手機)</label>
-                  <div class="input">
-                    <input type="text" placeholder="請輸入手機號碼">
-                  </div>
-                </div>
-                <div class="input-item">
-                  <label class="width-6">設定登入密碼</label>
-                  <div class="input">
-                    <input type="password" placeholder="請設定登入密碼">
-                  </div>
-                </div>
-                <div class="input-item">
-                  <label class="width-6">再次輸入密碼</label>
-                  <div class="input">
-                    <input type="password" placeholder="請再次輸入密碼">
-                  </div>
-                </div>
-                <button class="primary">開始註冊</button>
+                <button class="primary">下一步</button>
               </form>
-              <div class="sub-content"><span>註冊即代表同意</span><a class="link-button" href="#">會員條款與隱私權政策</a></div>
             </div>
           </div>
         </div>

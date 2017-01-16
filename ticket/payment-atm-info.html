@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="/assets/images/favicon.png">
     <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-152.png">
     <meta name="msapplication-TileColor" content="#24BBEA">
-    <meta name="msapplication-TileImage" content="/assets/images/favicon-144.png"><link rel="stylesheet" href="assets/stylesheets/all.css"/><!-- [if lt IE 9] <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> -->
+    <meta name="msapplication-TileImage" content="/assets/images/favicon-144.png"><link rel="stylesheet" href="../assets/stylesheets/all.css"/><!-- [if lt IE 9] <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> -->
     <script>var breakpoints = {"phone":"320px","tablet":"740px","desktop":"980px","wide":"1300px"}</script>
     <title>天作之合</title>
     <meta name="keywords" content="">
@@ -21,43 +21,42 @@
   </head>
   <body>
     <div class="header">
-      <div class="container"><a class="logo" href="index.html"><h1>天作之合</h1></a>
+      <div class="container"><a class="logo" href="../index.html"><h1>天作之合</h1></a>
         <div class="menu-button-wrap" data-toggle="collapse" data-target="#menu-list">
           <div class="menu-button"><span></span></div>
         </div>
         <ul class="menu collapse" id="menu-list">
-          <li><a class="menu-item" href="ticket/index.html">線上訂票</a></li>
+          <li><a class="menu-item" href="../ticket/index.html">線上訂票</a></li>
           <li><a class="menu-item" href="https://www.facebook.com/perfectmatch.theatre" target="_blank">FB 粉絲團</a></li>
-          <li><a class="menu-item" href="member/index.html">會員專區</a></li>
-          <li class="member"><a class="menu-item" href="account/index.html">登入</a></li>
+          <li><a class="menu-item" href="../member/index.html">會員專區</a></li>
+          <li class="member"><a class="menu-item" href="../account/index.html">登入</a></li>
         </ul>
       </div>
     </div>
     <div class="container">
       <div class="page-header">
         <div class="page-header-inner">
-          <h2 class="page-title">Perfect Match Website Preview</h2>
+          <h2 class="page-title">結帳資訊</h2>
         </div>
       </div>
       <div class="main-content">
-        <p><a href="account/index.html">A2-A3 登入/註冊</a></p>
-        <p><a href="account/forget-pw.html">A2.1 忘記密碼</a></p>
-        <p><a href="account/forget-pw-auth.html">A2.2 忘記密碼手機認證</a></p>
-        <p><a href="account/reset-pw.html">A2.3 重設密碼</a></p>
-        <p><a href="account/signup-phone-auth.html">A3.1 手機驗證</a></p>
-        <p><a href="account/signup-identity-auth.html">A4 會員身份選擇</a></p>
-        <p><a href="account/signup-identity-auth-student.html">A4.1 學生會員上傳學生證</a></p>
-        <p><a href="account/signup-sns-phone-auth.html">A5 FB&amp;LINE 登入註冊填手機</a></p>
-        <p><a href="ticket/index.html">C1 活動列表</a></p>
-        <p><a href="ticket/event-detail.html">C2 選擇場次</a></p>
-        <p><a href="ticket/area-select.html">C3 選擇票區、張數（這邊需要討論，如果要呈現所有座位狀態手機版一定有問題）</a></p>
-        <p><a href="ticket/seat-select.html">C4 選擇座位（這邊需要討論，同 C3 看到時座位的呈現方式因應調整）</a></p>
-        <p><a href="ticket/payment-step1.html">C5 step1 購票確認</a></p>
-        <p><a href="ticket/payment-step2.html">C5.1 step2 付款結帳</a></p>
-        <p><a href="ticket/payment-step3-success.html">C6 step3 信用卡付款成功</a></p>
-        <p><a href="ticket/payment-step3-failed.html">C6.1 step3 信用卡付款失敗 尚未逾時</a></p>
-        <p><a href="ticket/payment-step3-failed-timeout.html">C6.2 step3 信用卡付款失敗 已經逾時</a></p>
-        <p><a href="ticket/payment-atm-info.html">C7 ATM 付款說明</a></p>
+        <div class="payment">
+          <div class="section">
+            <h3 class="section-title">ATM 虛擬繳款帳號(僅供本筆訂單使用)</h3>
+            <div class="section-content">
+              <div class="payment-atm-info"><span>匯款銀行：台新銀行 (812)</span><span>虛擬帳號：1652-6548-4569-8756</span><span>應付金額：$4000元</span></div>
+              <p>請注意，您需於<strong class='important'>3小時</strong>內，完成ATM虛擬繳款帳號付款流程，我們才能保留您選擇的座位。逾時此筆訂單將自動取消，謝謝!</p>
+              <p>您可以在“會員專區&gt;購票紀錄”中查詢訂單付款狀態。</p>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-content">
+              <form>
+                <button class="primary">我知道了</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -74,6 +73,6 @@
           <div class="copyright">© 2016 Perfect Match All Rights Reserved.</div>
         </div>
       </div>
-    </div><script src="assets/javascripts/global.js"></script>
+    </div><script src="../assets/javascripts/global.js"></script>
   </body>
 </html>

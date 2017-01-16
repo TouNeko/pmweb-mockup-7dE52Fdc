@@ -36,19 +36,61 @@
     <div class="container">
       <div class="page-header">
         <div class="page-header-inner">
-          <h2 class="page-title">會員身份選擇</h2>
+          <h2 class="page-title">結帳資訊</h2>
         </div>
       </div>
+      <div class="notification"><span class="time-count">購票確認倒數計時：9 分 48 秒</span><span>請於時間內完成訂票流程，逾時座位將自動釋出。</span></div>
       <div class="main-content">
-        <div class="account">
-          <div class="message"><img class="message-image" src="../assets/images/icon_96_identity.svg">
-            <h3 class="message-title">請問你是學生嗎?</h3>
-            <p class="message-content">需上傳學生證，並經過天作之合審核通過才能成為學生會員。購票時，只有完成認證的學生會員，才可以購買學生票。</p>
+        <div class="payment">
+          <div class="payment-process is-step2-active">
+            <div class="payment-step step1"><span>購票確認</span></div>
+            <div class="payment-step step2"><span>付款結帳</span></div>
+            <div class="payment-step step3"><span>訂購結果</span></div>
           </div>
-          <form>
-            <button class="primary">進行學生會員認證</button>
-            <button>我不是學生</button>
-          </form>
+          <div class="section">
+            <h3 class="section-title">付款資訊</h3>
+            <div class="section-content">
+              <form>
+                <div class="input-item info">
+                  <label class="width-6">付款金額</label>
+                  <div class="input">$4000元</div>
+                </div>
+                <div class="input-item">
+                  <label class="width-6">付款方式</label>
+                  <div class="input select">
+                    <select>
+                      <option value="credit">信用卡付款</option>
+                      <option value="ibon">iBon 付款</option>
+                      <option value="atm">ATM 付款</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label class="width-6 is-necessary">購票人姓名</label>
+                  <div class="input">
+                    <input type="text" placeholder="請填寫真實姓名方便連繫">
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label class="width-6 is-necessary">購票人信箱</label>
+                  <div class="input">
+                    <input type="email" placeholder="購票資訊將寄至您的信箱">
+                  </div>
+                </div>
+                <div class="input-item info">
+                  <label class="width-6">購票人手機</label>
+                  <div class="input">+886 0922-222-345</div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-content">
+              <form>
+                <button class="primary">確定購票</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
