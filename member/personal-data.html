@@ -36,22 +36,56 @@
     <div class="container">
       <div class="page-header">
         <div class="page-header-inner">
-          <h2 class="page-title">手機驗證</h2>
+          <h2 class="page-title">個人資料</h2>
         </div>
       </div>
       <div class="main-content">
-        <div class="account">
-          <div class="message"><img class="message-image" src="../assets/images/icon_96_phone_number.svg">
-            <p class="message-content">請填入您的手機號碼進行驗證</p>
-          </div>
-          <form>
-            <div class="input-item">
-              <div class="input">
-                <input class="center" type="text" placeholder="請輸入手機號碼">
-              </div>
+        <div class="member">
+          <div class="section">
+            <div class="section-content">
+              <form>
+                <div class="input-item info">
+                  <label class="width-4">帳號</label>
+                  <div class="input">台灣(886) 0922-222-345</div>
+                </div>
+                <div class="input-item">
+                  <label class="width-4">姓名</label>
+                  <div class="input">
+                    <input type="text" placeholder="請填入姓名">
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label class="width-4">電子信箱</label>
+                  <div class="input">
+                    <input type="email" placeholder="請填入電子信箱">
+                  </div>
+                </div>
+                <div class="input-item info">
+                  <label class="width-4">會員身份</label>
+                  <div class="input">一般會員<a class="button inline" href="../account/signup-identity-auth-student.html">進行學生認證</a></div>
+                </div>
+                <h4>寄送地址</h4>
+                <div class="input-item">
+                  <div class="input half select">
+                    <select>
+                      <option value="city">台北市</option>
+                    </select>
+                  </div>
+                  <div class="input half select">
+                    <select>
+                      <option value="district">大安區</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <div class="input">
+                    <input type="text" placeholder="請填入地址">
+                  </div>
+                </div>
+                <button class="primary">儲存</button>
+              </form>
             </div>
-            <button class="primary">下一步</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>

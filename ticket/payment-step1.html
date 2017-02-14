@@ -29,7 +29,7 @@
           <li><a class="menu-item" href="../ticket/index.html">線上訂票</a></li>
           <li><a class="menu-item" href="https://www.facebook.com/perfectmatch.theatre" target="_blank">FB 粉絲團</a></li>
           <li><a class="menu-item" href="../member/index.html">會員專區</a></li>
-          <li class="member"><a class="menu-item" href="../account/index.html">登入</a></li>
+          <li><a class="menu-item" href="../account/index.html">登入</a></li>
         </ul>
       </div>
     </div>
@@ -43,6 +43,7 @@
       <div class="main-content">
         <div class="payment">
           <div class="payment-process is-step1-active">
+            <!-- 用後面 is-stepX-active 這個 class 控制付款進度樣式，基本上應該不用動它-->
             <div class="payment-step step1"><span>購票確認</span></div>
             <div class="payment-step step2"><span>付款結帳</span></div>
             <div class="payment-step step3"><span>訂購結果</span></div>
@@ -78,7 +79,9 @@
               </ul>
               <form>
                 <div class="use-bonus">
-                  <input type="checkbox">使用紅利點數兌換票券
+                  <input id="use-bonus-check" type="checkbox">
+                  <label for="use-bonus-check">使用紅利點數兌換票券</label><span class="use-bonus-detail"></span>
+                  <!-- 點擊這個 span 會跳出剩餘點數資訊，這部分在 app 那邊是用 dialog 做的-->
                 </div>
               </form>
             </div>
@@ -88,13 +91,13 @@
             <div class="section-content">
               <form>
                 <div class="get-ticket-method">
-                  <input type="radio" name="method" value="e_ticket">
-                  <div class="method">電子票券</div>
+                  <input id="e-ticket" type="radio" name="method" value="e_ticket">
+                  <label class="method" for="e-ticket">電子票券</label>
                   <div class="price">$0元</div>
                 </div>
                 <div class="get-ticket-method">
-                  <input type="radio" name="method" value="ibon">
-                  <div class="method">iBon 取票</div>
+                  <input id="ibon" type="radio" name="method" value="ibon">
+                  <label class="method" for="ibon">iBon 取票</label>
                   <div class="price">$30元</div>
                 </div>
               </form>

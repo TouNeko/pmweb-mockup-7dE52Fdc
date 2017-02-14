@@ -29,7 +29,7 @@
           <li><a class="menu-item" href="../ticket/index.html">線上訂票</a></li>
           <li><a class="menu-item" href="https://www.facebook.com/perfectmatch.theatre" target="_blank">FB 粉絲團</a></li>
           <li><a class="menu-item" href="../member/index.html">會員專區</a></li>
-          <li class="member"><a class="menu-item" href="../account/index.html">登入</a></li>
+          <li><a class="menu-item" href="../account/index.html">登入</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +44,9 @@
         <div class="area-detail">
           <div class="section">
             <div class="section-content">
-              <div class="area-preview"><img src="../assets/images/area-preview.png"></div>
+              <div class="area-preview"><img src="../assets/images/area-preview.png">
+                <!-- 這是塞場地座位表的地方，圖片可以拿掉，我是替代用而已。基本上手機版應該會爆，你們先塞塞看，有需要我調整的地方再跟我說-->
+              </div>
             </div>
           </div>
           <div class="section">
@@ -52,12 +54,14 @@
             <div class="section-content">
               <ul class="area-list">
                 <li class="area-head"><span class="area">票區</span><span class="amount">剩餘數量</span><span class="status">目前最多連號座位數</span><span class="price">票價</span><span class="quantity">張數</span><span class="action">購票</span></li>
+                <!-- 票區區塊起始-->
                 <li class="area-info"><span class="area">
                     <div class="area-name">A區</div>
                     <div class="color" style="background-color: #9a6435"></div></span><span class="amount">48</span><span class="status">3</span><span class="price">$2000</span><span class="quantity">
                     <div class="quantity-button minus">-</div>
                     <input type="number" value="1">
                     <div class="quantity-button plus">+</div></span><span class="action"><a class="buy-button" href="#">立即購票</a></span></li>
+                <!-- 票區區快結束-->
                 <li class="area-info"><span class="area">
                     <div class="area-name">B區</div>
                     <div class="color" style="background-color: #edacce"></div></span><span class="amount">72</span><span class="status">6</span><span class="price">$1500</span><span class="quantity">
@@ -69,7 +73,8 @@
                     <div class="color" style="background-color: #2386fe"></div></span><span class="amount">0</span><span class="status">0</span><span class="price">$1000</span><span class="quantity">
                     <div class="quantity-button minus">-</div>
                     <input type="number" value="1">
-                    <div class="quantity-button plus">+</div></span><span class="action"><a class="buy-button is-disable"> 立即購票</a></span></li>
+                    <div class="quantity-button plus">+</div></span><span class="action"><a class="buy-button is-disable"> 立即購票</a>
+                    <!-- buy-button 加上 is-disable 這個 class 表示按鈕不能按--></span></li>
               </ul>
             </div>
           </div>

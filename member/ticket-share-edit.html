@@ -36,22 +36,65 @@
     <div class="container">
       <div class="page-header">
         <div class="page-header-inner">
-          <h2 class="page-title">手機驗證</h2>
+          <h2 class="page-title">分票</h2>
         </div>
       </div>
       <div class="main-content">
-        <div class="account">
-          <div class="message"><img class="message-image" src="../assets/images/icon_96_phone_number.svg">
-            <p class="message-content">請填入您的手機號碼進行驗證</p>
-          </div>
-          <form>
-            <div class="input-item">
-              <div class="input">
-                <input class="center" type="text" placeholder="請輸入手機號碼">
+        <div class="member">
+          <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
+              <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
+            <div class="ticket-meta">
+              <div class="ticket-meta-row">
+                <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
+                <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
               </div>
+              <hr>
+              <div class="ticket-meta-row">
+                <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
+                <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
+              </div><span class="status">尚未入場</span>
             </div>
-            <button class="primary">下一步</button>
-          </form>
+          </div>
+          <div class="section">
+            <div class="section-content">
+              <p>我要將以上這張票分給</p>
+              <form>
+                <div class="input-item">
+                  <label class="width-8">收票人姓名</label>
+                  <div class="input">
+                    <input type="text" placeholder="收票人姓名">
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label class="width-8">收票人手機國別</label>
+                  <div class="input select">
+                    <select>
+                      <option value="credit">台灣(886)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label class="width-8">收票人手機號碼</label>
+                  <div class="input">
+                    <input type="text" placeholder="收票人手機號碼">
+                  </div>
+                </div>
+                <button class="primary">修改分票</button>
+                <button>取消分票</button>
+              </form>
+            </div>
+          </div>
+          <div class="section">
+            <div class="section-content">
+              <p>分票機制說明</p>
+              <ol>
+                <li>尚未入場的票券才能夠進行分票。</li>
+                <li>原持票人分票後，等待收票人接收票券。</li>
+                <li>收票人需安裝本App才能接收票券。</li>
+                <li>收票人接收票券成功後，原持票人票券狀態會變更為 “已分票”，無法持此票入場。</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </div>

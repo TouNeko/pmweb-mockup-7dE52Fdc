@@ -29,7 +29,7 @@
           <li><a class="menu-item" href="../ticket/index.html">線上訂票</a></li>
           <li><a class="menu-item" href="https://www.facebook.com/perfectmatch.theatre" target="_blank">FB 粉絲團</a></li>
           <li><a class="menu-item" href="../member/index.html">會員專區</a></li>
-          <li class="member"><a class="menu-item" href="../account/index.html">登入</a></li>
+          <li><a class="menu-item" href="../account/index.html">登入</a></li>
         </ul>
       </div>
     </div>
@@ -46,10 +46,13 @@
             <div class="section-content">
               <ul class="session-list">
                 <li class="session-head"><span class="time">場次時間</span><span class="location">演出場地</span><span class="status">售票狀態</span><span class="price">票價</span><span class="action">購票</span></li>
+                <!-- 場次區塊起始-->
+                <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">現正熱賣中</span><span class="price">600元起</span><span class="action"><a class="buy-button" href="#">選擇本場次</a></span></li>
+                <!-- 場次區塊結束-->
                 <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">現正熱賣中</span><span class="price">600元起</span><span class="action"><a class="buy-button" href="#">選擇本場次</a></span></li>
                 <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">現正熱賣中</span><span class="price">600元起</span><span class="action"><a class="buy-button" href="#">選擇本場次</a></span></li>
-                <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">現正熱賣中</span><span class="price">600元起</span><span class="action"><a class="buy-button" href="#">選擇本場次</a></span></li>
-                <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">尚未開賣</span><span class="price">600元起</span><span class="action"><a class="buy-button is-disable">選擇本場次</a></span></li>
+                <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">尚未開賣</span><span class="price">600元起</span><span class="action"><a class="buy-button is-disable">選擇本場次</a>
+                    <!-- buy-button 加上 is-disable 這個 class 表示按鈕不能按--></span></li>
                 <li class="session"><span class="time">2016/11/25(二) 19:00</span><span class="location">新北市藝文中心</span><span class="status">尚未開賣</span><span class="price">600元起</span><span class="action"><a class="buy-button is-disable">選擇本場次</a></span></li>
               </ul>
             </div>
@@ -84,9 +87,11 @@
           <div class="section">
             <h3 class="section-title">關於本劇</h3>
             <div class="section-content">
+              <!-- YouTube 影片嵌入 DOM 架構-->
               <div class="youtube-video">
                 <iframe src="https://www.youtube.com/embed/vcpw0-ZUPNo" frameborder="0" allowfullscreen=""></iframe>
               </div>
+              <!-- YouTube iframe 必須包在 youtube-video 裡面，這是為了 RWD 調整的，讓 iframe 也可以依照比例縮放，iframe 不要加上大小相關的 attribute-->
               <p>做一杯「完美的咖啡」是一種科學，也是一種藝術； 而咖啡豆就像每一個人，都有專屬於他的、或者最適合他的對待方式。</p>
               <p>2015口碑完售，一票難求。 <br>2016香醇持續，熱力加演！ <br>今年冬天，來一杯香醇的音樂劇！</p>
               <p>觀眾好評熱烈回饋 <br>「第一次看音樂劇，深深的愛上了！」 <br>「令人震撼的歌聲！」 <br>「毫無冷場！非常棒的演出，第一次在台灣看到這麼棒的歌舞劇！」 <br>「在聖誕節跟新年期間看到這麼精彩的音樂劇，真的很開心。」 <br>「建議不要太好看，我會捨不得走。」</p>
