@@ -372,7 +372,7 @@ body {
       padding: 0 56px; } }
   @media (min-width: 61.25em) {
     .container {
-      padding: 0 76px; } }
+      padding: 0 64px; } }
 
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -460,14 +460,14 @@ p.big-text {
     line-height: 44px; }
     .input-item .input.select {
       background: url('../images/icon_44_down_arrow.svg') top right no-repeat; }
-    .input-item .input input[type='text'], .input-item .input input[type='email'], .input-item .input input[type='password'], .input-item .input input[type='number'], .input-item .input input[type='file'] {
+    .input-item .input input[type='text'], .input-item .input input[type='email'], .input-item .input input[type='password'], .input-item .input input[type='number'], .input-item .input input[type='file'], .input-item .input input[type='tel'] {
       width: 100%;
       padding: 10px 0;
       line-height: 24px;
       border: 0;
       outline: 0;
       background-color: transparent; }
-      .input-item .input input[type='text'].center, .input-item .input input[type='email'].center, .input-item .input input[type='password'].center, .input-item .input input[type='number'].center, .input-item .input input[type='file'].center {
+      .input-item .input input[type='text'].center, .input-item .input input[type='email'].center, .input-item .input input[type='password'].center, .input-item .input input[type='number'].center, .input-item .input input[type='file'].center, .input-item .input input[type='tel'].center {
         text-align: center; }
     .input-item .input.half {
       display: inline-block;
@@ -647,7 +647,9 @@ a.button {
       .event-list li:last-child {
         padding-bottom: 16px; }
     .event-list .event-item {
-      box-shadow: none; }
+      box-shadow: none;
+      background: -webkit-linear-gradient(135deg, #f5f2ee, white, white);
+      background: linear-gradient(315deg, #f5f2ee, white, white); }
     .event-list .event-preview-photo {
       float: left;
       width: 375px;
@@ -672,7 +674,8 @@ a.button {
         height: 1px;
         background-color: #dfe0e0; }
     .event-list .event-info {
-      padding: 16px 148px 16px 16px;
+      position: relative;
+      padding: 16px 152px 16px 16px;
       height: 209px; }
     .event-list .event-title {
       position: relative;
@@ -680,11 +683,13 @@ a.button {
       padding: 0;
       color: #272929; }
       .event-list .event-title .title {
-        font-size: 24px; }
+        font-size: 21px; }
       .event-list .event-title .location {
         font-size: 15px; }
     .event-list .event-meta {
-      margin-top: 60px;
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
       font-size: 15px; }
     .event-list .event-action {
       width: 148px;
@@ -1233,7 +1238,8 @@ a.button {
         color: #df643e; }
     .sign-tab li a, .tab li a {
       display: block;
-      padding: 16px;
+      padding: 16px 8px;
+      font-size: 15px;
       font-weight: 500;
       color: #272929;
       text-decoration: none;
@@ -1256,6 +1262,9 @@ a.button {
     .tab-pane.fade.in {
       opacity: 1; }
 
+.ticket-tab li, .event-tab li {
+  width: calc(100% / 3); }
+
 .ticket {
   position: relative;
   max-width: 640px;
@@ -1268,6 +1277,7 @@ a.button {
   .ticket .ticket-title {
     display: block;
     position: relative;
+    overflow: hidden;
     padding-top: 56.25%;
     background-color: #272929; }
     .ticket .ticket-title:before {
@@ -1280,8 +1290,6 @@ a.button {
       bottom: 0;
       background: -webkit-linear-gradient(top, transparent, transparent, rgba(0, 0, 0, 0.7));
       background: linear-gradient(to bottom, transparent, transparent, rgba(0, 0, 0, 0.7)); }
-    .ticket .ticket-title:hover {
-      opacity: .95; }
   .ticket .ticket-image {
     position: absolute;
     top: 0;
@@ -1394,6 +1402,13 @@ a.button {
       font-size: 18px; }
       .ticket.detail .ticket-meta-row .time:before {
         font-size: 16px; } }
+  @media (min-width: 61.25em) {
+    .ticket .ticket-title {
+      padding-top: 40%;
+      -webkit-transition: padding-top .25s;
+      transition: padding-top .25s; }
+      .ticket .ticket-title:hover {
+        padding-top: 56.25%; } }
 
 .ticket-printer {
   margin-left: -12px;
@@ -1573,14 +1588,14 @@ a.button {
         content: '目前最多連號座位數'; }
       .area-detail .area-list .area-info .price:before {
         content: '票價'; }
-      .area-detail .area-list .area-info .quantity input[type=number] {
+      .area-detail .area-list .area-info .quantity input[type='number'] {
         width: 26px;
         height: 26px;
         vertical-align: middle;
         text-align: center;
         border: 0; }
-      .area-detail .area-list .area-info .quantity input[type=number]::-webkit-inner-spin-button,
-      .area-detail .area-list .area-info .quantity input[type=number]::-webkit-outer-spin-button {
+      .area-detail .area-list .area-info .quantity input[type='number']::-webkit-inner-spin-button,
+      .area-detail .area-list .area-info .quantity input[type='number']::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0; }
       .area-detail .area-list .area-info .quantity .quantity-button {
@@ -1657,6 +1672,10 @@ a.button {
   @media (min-width: 61.25em) {
     .area-detail .area-list .area-info {
       font-size: 15px; } }
+
+.event {
+  max-width: 1080px;
+  margin: 0 auto; }
 
 .event-detail {
   max-width: 800px;

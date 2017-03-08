@@ -29,7 +29,10 @@
           <li><a class="menu-item" href="../ticket/index.html">線上訂票</a></li>
           <li><a class="menu-item" href="https://www.facebook.com/perfectmatch.theatre" target="_blank">FB 粉絲團</a></li>
           <li><a class="menu-item" href="../member/index.html">會員專區</a></li>
-          <li><a class="menu-item" href="../account/index.html">登入</a></li>
+          <li>
+            <!-- span.member-name 周鼎軒-->
+            <!-- 這是登入後的狀態--><a class="menu-item" href="../account/index.html">登入</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -41,65 +44,78 @@
       </div>
       <div class="main-content">
         <div class="member">
-          <div class="ticket-class">本日票券</div>
-          <!-- 票券區塊起始-->
-          <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
-              <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
-            <div class="ticket-meta">
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
-                <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+          <!-- 這頁改成 tab 的版面架構，DOM 更動的部分較多-->
+          <!-- 新增 tab 切換區塊-->
+          <ul class="nav nav-tabs tab ticket-tab">
+            <li class="active"><a href="#ticket-today" data-toggle="tab">本日票券</a></li>
+            <li><a href="#ticket-comingsoon" data-toggle="tab">未來票券</a></li>
+            <li><a href="#ticket-history" data-toggle="tab">歷史票券</a></li>
+          </ul>
+          <div class="tab-content">
+            <!-- 多一層 tab-pane 架構-->
+            <div class="tab-pane fade in active" id="ticket-today">
+              <!-- 票券區塊起始-->
+              <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
+                  <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
+                <div class="ticket-meta">
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
+                    <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+                  </div>
+                  <hr>
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
+                    <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
+                  </div><span class="status">已入場 (魏谷 886 0923 125 455)</span>
+                </div>
               </div>
-              <hr>
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
-                <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
-              </div><span class="status">已入場 (魏谷 886 0923 125 455)</span>
+              <!-- 票券區塊結束-->
             </div>
-          </div>
-          <!-- 票券區塊結束-->
-          <div class="ticket-class">未來票券</div>
-          <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
-              <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
-            <div class="ticket-meta">
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
-                <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+            <div class="tab-pane fade in" id="ticket-comingsoon">
+              <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
+                  <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
+                <div class="ticket-meta">
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
+                    <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+                  </div>
+                  <hr>
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
+                    <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
+                  </div><span class="status"><a class='button inline' href='/member/ticket-share'>分票</a>尚未入場</span>
+                </div>
               </div>
-              <hr>
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
-                <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
-              </div><span class="status"><a class='button inline' href='/member/ticket-share'>分票</a>尚未入場</span>
+              <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
+                  <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
+                <div class="ticket-meta">
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
+                    <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+                  </div>
+                  <hr>
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
+                    <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
+                  </div><span class="status"><a class='button inline' href='/member/ticket-share-edit'>修改</a>分票中 (魏谷 886 0923 125 455)</span>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
-              <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
-            <div class="ticket-meta">
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
-                <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+            <div class="tab-pane fade in" id="ticket-history">
+              <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
+                  <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
+                <div class="ticket-meta">
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
+                    <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
+                  </div>
+                  <hr>
+                  <div class="ticket-meta-row">
+                    <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
+                    <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
+                  </div><span class="status">已入場</span>
+                </div>
               </div>
-              <hr>
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
-                <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
-              </div><span class="status"><a class='button inline' href='/member/ticket-share-edit'>修改</a>分票中 (魏谷 886 0923 125 455)</span>
-            </div>
-          </div>
-          <div class="ticket-class">歷史票券</div>
-          <div class="ticket"><a class="ticket-title" href="../member/ticket-detail.html"><img class="ticket-image" src="../assets/images/event-preview-image.png">
-              <div class="ticket-name">寂寞瑪奇朵 2017 熱情續杯</div></a>
-            <div class="ticket-meta">
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="address">新北市板橋區文化路100號</span><span class="location">新北市藝文中心演藝廳</span></div>
-                <div class="ticket-meta-right"><span class="price">2000元</span><span class="seat">A區8排13號</span></div>
-              </div>
-              <hr>
-              <div class="ticket-meta-row">
-                <div class="ticket-meta-left"><span class="time">2016/11/25 PM19:00</span></div>
-                <div class="ticket-meta-right"><span class="number">A42533365456</span></div>
-              </div><span class="status">已入場</span>
             </div>
           </div>
         </div>
