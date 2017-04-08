@@ -1250,6 +1250,10 @@ a.button {
 
 .section .section-content {
   margin-bottom: 48px; }
+  .section .section-content:after {
+    content: '';
+    display: table;
+    clear: both; }
   .section .section-content p, .section .section-content ol, .section .section-content ul {
     line-height: 1.7; }
 
@@ -1783,10 +1787,16 @@ a.button {
       font-size: 18px; }
     .app-intro .app-tutorial .tab li.active a {
       color: #df643e; }
-    .app-intro .app-tutorial .tab-pane:after {
-      content: '';
-      display: table;
-      clear: both; }
+    .app-intro .app-tutorial .tab-pane {
+      margin: 24px 8px; }
+      .app-intro .app-tutorial .tab-pane:after {
+        content: '';
+        display: table;
+        clear: both; }
+    .app-intro .app-tutorial .section .section-title {
+      font-size: 28px;
+      color: white;
+      border-left-color: white; }
     @media (min-width: 46.25em) {
       .app-intro .app-tutorial .tutorial-step {
         float: left;
