@@ -1627,7 +1627,7 @@ a.button {
 .app-intro {
   background-color: white; }
   .app-intro .hero {
-    overflow: hidden;
+    width: 100%;
     margin-top: -76px;
     padding-top: 76px;
     background: url('../images/app-hero-bg.jpg') center no-repeat;
